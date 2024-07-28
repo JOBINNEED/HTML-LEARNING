@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBINNEED Blogs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            padding: 2rem 1rem;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 2.5rem;
+            text-align: center;
+            background: #007bff;
+            color: #fff;
+            padding: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header-title {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            font-weight: 700;
+        }
+        .header-content {
+            max-width: 768px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        .card-container {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background-color: #fff;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card-image-container {
+            position: relative;
+            overflow: hidden;
+            height: 200px;
+        }
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .card:hover .card-image {
+            transform: scale(1.1);
+        }
+        .card-title-container {
+            padding: 1.5rem;
+        }
+        .card-title-container h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #007bff;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s;
+        }
+        .card:hover .card-title-container h2 {
+            color: #0056b3;
+        }
+        .card-body {
+            color: #6b6a6a;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-top: 1px solid #eaeaea;
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .avatar {
+            height: 40px;
+            width: 40px;
+            overflow: hidden;
+            border-radius: 50%;
+            background-color: #ececec;
+        }
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .author-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .name {
+            color: #007bff;
+            font-weight: 600;
+        }
+        .date {
+            color: gray;
+            font-size: 0.875rem;
+        }
+        .tag {
+            border: 1px solid #007bff;
+            border-radius: 3px;
+            padding: 0.25rem 0.5rem;
+            color: #007bff;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        footer p {
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header class="header">
+            <h1 class="header-title">JOBINNEED Blogs</h1>
+            <p class="header-content">Welcome to JOBINNEED Blogs, where words become art and ideas come to life. Discover the joy of writing, publishing, and sharing your passions with the world.</p>
+        </header>
+        <main class="card-container">
+            <div class="card">
+                <a href="#" class="card-image-container">
+                    <img src="https://via.placeholder.com/400x200?text=Gadgets" alt="Gadgets Image" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#">
+                        <h2>New Gadgets Released</h2>
+                    </a>
+                    <p class="card-body">
+                        Check out the latest tech gadgets hitting the market, from smartphones to smartwatches.
+                    </p>
+                    <div class="card-footer">
+                        <div class="author">
+                            <div class="avatar">
+                                <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" alt="John Doe">
+                            </div>
+                            <div class="author-info">
+                                <span class="name">John Doe</span>
+                                <span class="date">Sept 19, 2021</span>
+                            </div>
+                        </div>
+                        <div class="tag">Technology</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#" class="card-image-container">
+                    <img src="https://via.placeholder.com/400x200?text=Travel" alt="Travel Image" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#">
+                        <h2>Top Travel Destinations</h2>
+                    </a>
+                    <p class="card-body">
+                        Explore the most beautiful and exotic travel destinations around the world.
+                    </p>
+                    <div class="card-footer">
+                        <div class="author">
+                            <div class="avatar">
+                                <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Jane?size=64" alt="Jane Smith">
+                            </div>
+                            <div class="author-info">
+                                <span class="name">Jane Smith</span>
+                                <span class="date">Oct 5, 2021</span>
+                            </div>
+                        </div>
+                        <div class="tag">Travel</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#" class="card-image-container">
+                    <img src="https://via.placeholder.com/400x200?text=Food" alt="Food Image" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#">
+                        <h2>Delicious Recipes to Try</h2>
+                    </a>
+                    <p class="card-body">
+                        Discover new recipes and culinary techniques to try in your kitchen.
+                    </p>
+                    <div class="card-footer">
+                        <div class="author">
+                            <div class="avatar">
+                                <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Sam?size=64" alt="Sam Lee">
+                            </div>
+                            <div class="author-info">
+                                <span class="name">Sam Lee</span>
+                                <span class="date">Nov 12, 2021</span>
+                            </div>
+                        </div>
+                        <div class="tag">Food</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#" class="card-image-container">
+                    <img src="https://via.placeholder.com/400x200?text=Fitness" alt="Fitness Image" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#">
+                        <h2>Fitness Tips and Tricks</h2>
+                    </a>
+                    <p class="card-body">
+                        Stay healthy and fit with our expert fitness tips and workout routines.
+                    </p>
+                    <div class="card-footer">
+                        <div class="author">
+                            <div class="avatar">
+                                <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Mike?size=64" alt="Mike Johnson">
+                            </div>
+                            <div class="author-info">
+                                <span class="name">Mike Johnson</span>
+                                <span class="date">Dec 22, 2021</span>
+                            </div>
+                        </div>
+                        <div class="tag">Fitness</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <a href="#" class="card-image-container">
+                    <img src="https://via.placeholder.com/400x200?text=Finance" alt="Finance Image" class="card-image" loading="lazy">
+                </a>
+                <div class="card-title-container">
+                    <a href="#">
+                        <h2>Financial Planning 101</h2>
+                    </a>
+                    <p class="card-body">
+                        Learn the basics of financial planning and how to manage your money effectively.
+                    </p>
+                    <div class="card-footer">
+                        <div class="author">
+                            <div class="avatar">
+                                <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Anna?size=64" alt="Anna Williams">
+                            </div>
+                            <div class="author-info">
+                                <span class="name">Anna Williams</span>
+                                <span class="date">Jan 15, 2022</span>
+                            </div>
+                        </div>
+                        <div class="tag">Finance</div>
+                    </div>
+                </div>
+            </div>
+<div class="card">
+    <a href="#" class="card-image-container">
+        <img src="https://via.placeholder.com/400x200?text=Travel" alt="Travel Image" class="card-image" loading="lazy">
+    </a>
+    <div class="card-title-container">
+        <a href="#">
+            <h2>Budget Travel Tips</h2>
+        </a>
+        <p class="card-body">
+            Discover how to travel on a budget without compromising on experiences.
+        </p>
+        <div class="card-footer">
+            <div class="author">
+                <div class="avatar">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Chris?size=64" alt="Chris Green">
+                </div>
+                <div class="author-info">
+                    <span class="name">Chris Green</span>
+                    <span class="date">Mar 21, 2022</span>
+                </div>
+            </div>
+            <div class="tag">Travel</div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <a href="#" class="card-image-container">
+        <img src="https://via.placeholder.com/400x200?text=Food" alt="Food Image" class="card-image" loading="lazy">
+    </a>
+    <div class="card-title-container">
+        <a href="#">
+            <h2>Vegan Cooking Ideas</h2>
+        </a>
+        <p class="card-body">
+            Explore delicious vegan recipes and learn how to cook plant-based meals.
+        </p>
+        <div class="card-footer">
+            <div class="author">
+                <div class="avatar">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Lily?size=64" alt="Lily Adams">
+                </div>
+                <div class="author-info">
+                    <span class="name">Lily Adams</span>
+                    <span class="date">Apr 12, 2022</span>
+                </div>
+            </div>
+            <div class="tag">Food</div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <a href="#" class="card-image-container">
+        <img src="https://via.placeholder.com/400x200?text=Fitness" alt="Fitness Image" class="card-image" loading="lazy">
+    </a>
+    <div class="card-title-container">
+        <a href="#">
+            <h2>Effective Home Workouts</h2>
+        </a>
+        <p class="card-body">
+            Stay fit at home with these effective workout routines and fitness tips.
+        </p>
+        <div class="card-footer">
+            <div class="author">
+                <div class="avatar">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Max?size=64" alt="Max Johnson">
+                </div>
+                <div class="author-info">
+                    <span class="name">Max Johnson</span>
+                    <span class="date">May 5, 2022</span>
+                </div>
+            </div>
+            <div class="tag">Fitness</div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <a href="#" class="card-image-container">
+        <img src="https://via.placeholder.com/400x200?text=Finance" alt="Finance Image" class="card-image" loading="lazy">
+    </a>
+    <div class="card-title-container">
+        <a href="#">
+            <h2>Investment Strategies</h2>
+        </a>
+        <p class="card-body">
+            Learn effective investment strategies and tips for managing your finances.
+        </p>
+        <div class="card-footer">
+            <div class="author">
+                <div class="avatar">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Olivia?size=64" alt="Olivia Moore">
+                </div>
+                <div class="author-info">
+                    <span class="name">Olivia Moore</span>
+                    <span class="date">June 18, 2022</span>
+                </div>
+            </div>
+            <div class="tag">Finance</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <a href="#" class="card-image-container">
+        <img src="https://via.placeholder.com/400x200?text=Health" alt="Health Image" class="card-image" loading="lazy">
+    </a>
+    <div class="card-title-container">
+        <a href="#">
+            <h2>Mental Health Awareness</h2>
+        </a>
+        <p class="card-body">
+            Explore resources and tips for improving mental health and well-being.
+        </p>
+        <div class="card-footer">
+            <div class="author">
+                <div class="avatar">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Ella?size=64" alt="Ella Davis">
+                </div>
+                <div class="author-info">
+                    <span class="name">Ella Davis</span>
+                    <span class="date">July 9, 2022</span>
+                </div>
+            </div>
+            <div class="tag">Health</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <a href="#" class="card-image-container">
+        <img src="https://via.placeholder.com/400x200?text=Fashion" alt="Fashion Image" class="card-image" loading="lazy">
+    </a>
+    <div class="card-title-container">
+        <a href="#">
+            <h2>Latest Fashion Trends</h2>
+        </a>
+        <p class="card-body">
+            Stay updated with the latest fashion trends and style tips from experts.
+        </p>
+        <div class="card-footer">
+            <div class="author">
+                <div class="avatar">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Sophia?size=64" alt="Sophia Wilson">
+                </div>
+                <div class="author-info">
+                    <span class="name">Sophia Wilson</span>
+                    <span class="date">Aug 24, 2022</span>
+                </div>
+            </div>
+            <div class="tag">Fashion</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <a href="#" class="card-image-container">
+        <img src="https://via.placeholder.com/400x200?text=Education" alt="Education Image" class="card-image" loading="lazy">
+    </a>
+    <div class="card-title-container">
+        <a href="#">
+            <h2>Online Learning Tips</h2>
+        </a>
+        <p class="card-body">
+            Discover effective online learning strategies and resources for students.
+        </p>
+        <div class="card-footer">
+            <div class="author">
+                <div class="avatar">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=Lucas?size=64" alt="Lucas Anderson">
+                </div>
+                <div class="author-info">
+                    <span class="name">Lucas Anderson</span>
+                    <span class="date">Sept 15, 2022</span>
+                </div>
+            </div>
+            <div class="tag">Education</div>
+        </div>
+    </div>
+</div>
+
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 JOBINNEED Blogs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
