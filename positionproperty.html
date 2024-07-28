@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin: 10px;
+        }
+        .container
+        { position: relative;
+            border: solid 1px black;
+            height: 8000px;
+        }
+        .pic2nd{
+            /* position: relative
+            ;
+            top: 100px;
+            left: 100px; */
+            position: absolute;
+            top: 100px;
+        }
+        .hpic4t
+        {
+            position: fixed;
+        }
+        .pic3rd{
+            position: sticky;
+            top: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Screenshot (11).png" class="pic1st" width="300px" height="300px">
+        <img src="Screenshot (11).png" class="pic2nd" width="300px" height="300px">
+        <img src="Screenshot (11).png" class="pic3rd" width="300px" height="300px">
+        <img src="Screenshot (11).png" class="hpic4t" width="300px" height="300px">
+    </div>
+</body>
+</html>
