@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(181, 181, 181, 1) 0%, rgba(0, 212, 255, 1) 100%);
+        }
+        nav {
+            width: 100%;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            padding: 10px 0;
+        }
+        #navlist {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            margin: 0 15px;
+        }
+        #brand {
+            font-size: 2.8rem;
+            color: #fff;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2rem;
+            margin-left: 20px;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .contentbox {
+            flex: 1;
+            margin: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        .leftbox {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .rightbox {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rightbox img {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: all 5s;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .aboutus {
+            background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footerbox {
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+        }
+        .footerbox p {
+            color: #fff;
+            font-size: 1rem;
+        }
+        .rightbox img:hover {
+    transform: scale(1.3); 
+    
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="navlist">
+                <li id="brand">JOBINNEEED Dhabba</li>
+                <li>
+                    <div id="navitems">
+                        <a href="#navitems">Home</a>
+                        
+                        <a href="#aboutus">About Us</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Recipes</h2>
+            <ul>
+                <li><a href="#gulab-jamun">Gulab Jamun</a></li>
+                <li><a href="#pasta-carbonara">Pasta Carbonara</a></li>
+                
+            </ul>
+        </aside>
+        <main class="contentbox">
+            <section id="gulab-jamun">
+                <div class="item">
+                    <div class="leftbox">
+                        <h2>Gulab Jamun</h2>
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>Milk powder</li>
+                            <li>All purpose flour</li>
+                            <li>Baking powder</li>
+                            <li>Egg</li>
+                            <li>Heavy cream or fresh cream</li>
+                            <li>Ghee or clarified butter</li>
+                            <li>Water</li>
+                            <li>Sugar</li>
+                            <li>Cardamom pods</li>
+                            <li>Oil for frying</li>
+                        </ul>
+                        <h3>Recipe</h3>
+                        <ol>
+                            <li>
+                                <h4>MAKE THE DOUGH</h4>
+                                <p>Mix wet and dry ingredients separately, then combine to form a dough. Knead, refrigerate for 20 minutes, then knead again until smooth.</p>
+                            </li>
+                            <li>
+                                <h4>FORM BALLS</h4>
+                                <p>Divide the dough into small balls, ensuring they are smooth with no cracks.</p>
+                            </li>
+                            <li>
+                                <h4>FRY THE GULAB JAMUN</h4>
+                                <p>Heat oil to medium and fry the dough balls until golden brown.</p>
+                            </li>
+                            <li>
+                                <h4>MAKE THE SUGAR SYRUP</h4>
+                                <p>Simmer sugar, water, and cardamom until the sugar dissolves.</p>
+                            </li>
+                            <li>
+                                <h4>SOAK THE GULAB JAMUN</h4>
+                                <p>Soak fried balls in syrup for at least 30 minutes.</p>
+                            </li>
+                            <li>
+                                <h4>SERVE & ENJOY!</h4>
+                                <p>Best served warm.</p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="rightbox">
+                        <img src="https://bakewithzoha.com/wp-content/uploads/2023/04/gulab-jamun-closeup-1152x1536.jpg" alt="Gulab Jamun" height="500" width="300">
+                        
+                    </div>
+                </div>
+            </section>
+            <section id="pasta-carbonara">
+                <div class="item">
+                    <div class="leftbox">
+                        <h2>Pasta Carbonara</h2>
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>Spaghetti</li>
+                            <li>Pancetta</li>
+                            <li>Egg yolks</li>
+                            <li>Parmesan cheese</li>
+                            <li>Black pepper</li>
+                            <li>Salt</li>
+                            <li>Olive oil</li>
+                            <li>Garlic (optional)</li>
+                        </ul>
+                        <h3>Recipe</h3>
+                        <ol>
+                            <li>
+                                <h4>COOK THE SPAGHETTI</h4>
+                                <p>Bring a large pot of salted water to a boil. Add the spaghetti and cook until al dente. Reserve some of the pasta water, then drain the pasta.</p>
+                            </li>
+                            <li>
+                                <h4>PREPARE THE PANCETTA</h4>
+                                <p>In a large skillet, heat olive oil over medium heat. Add the pancetta and cook until crispy. If using garlic, add it now and cook until fragrant.</p>
+                            </li>
+                            <li>
+                                <h4>MIX THE SAUCE</h4>
+                                <p>In a bowl, whisk together the egg yolks and grated Parmesan cheese. Add a pinch of salt and a generous amount of black pepper.</p>
+                            </li>
+                            <li>
+                                <h4>COMBINE PASTA AND SAUCE</h4>
+                                <p>Add the hot, drained pasta to the skillet with the pancetta. Remove from heat and pour the egg and cheese mixture over the pasta, tossing quickly to create a creamy sauce. If needed, add reserved pasta water to achieve desired consistency.</p>
+                            </li>
+                            <li>
+                                <h4>SERVE IMMEDIATELY</h4>
+                                <p>Plate the pasta and sprinkle with additional Parmesan cheese and black pepper. Serve immediately.</p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="rightbox">
+                        <img src="data:image/jpeg;base64,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" alt="Pasta Carbonara" height="500" width="300">
+                    </div>
+                </div>
+            </section>
+            <div class="aboutus" id="aboutus">
+                This is my first ever project where I have utilized my learnings of HTML and CSS. I am excited to share my journey of building a professional-looking recipe website, showcasing the delicious recipes I love. This project reflects my dedication to learning and improving my web development skills.
+            </div>
+            
+        </main>
+    </div>
+    <footer>
+        <div class="footerbox">
+            <p>&copy; JOBINNEEED Dhabba Pvt Ltd 2023</p>
+        </div>
+    </footer>
+</body>
+</html>
